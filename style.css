@@ -1,0 +1,397 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+    text-align: justify;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0,5s;
+    background-color: #111;
+}
+
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span{
+    color: red;
+}
+
+.nav{
+    display: flex;
+    position: relative;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 600;
+}
+
+header .nav li a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.background{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/background.jpg);
+    background-size: cover;
+}
+
+.background .description{
+    max-width: 90%;
+    text-align: center;
+}
+
+.background .description h2{
+    color: #fff;
+    font-size: 2em;
+}
+
+.description p{
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.description a{
+    font-size: 1em;
+    color: #fff;
+    background: red;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 13px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.description a:hover{
+    letter-spacing: 3px;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .column{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .column h2{
+    margin-bottom: 20px;
+}
+
+.title_àpropos{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.title_àpropos span{
+    color: red;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.img{
+    width: 600px;
+    position: relative;
+}
+
+.KnowMore{
+    font-size: 1em;
+    color: #fff;
+    background: red;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 13px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.title a:hover{
+    letter-spacing: 3px;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LaCarte{
+    margin-top: -100px;
+}
+
+.LaCarte .description{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.LaCarte .description .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+}
+
+.LaCarte .description .box .inbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.LaCarte .description .box .inbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+h3{
+    text-align: center;
+}
+
+.temoignage{
+    background-image: url(./assets/background_temoignage.jpg);
+    background-size: cover;
+}
+
+.temoignage .description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.temoignage .description .box{
+    width: 290px;
+    margin: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.temoignage .description .box .inbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.temoignage .description .box .inbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_name p{
+    color: #111;
+    
+}
+
+.temoignage .description .box .img_name{
+    text-align: center;
+}
+
+.temoignage .description .box .img_name h3{
+    color: red;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.contact{
+    background-size: cover;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.8);
+    width: 100%;
+    background-position: unset;
+}
+
+form{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 6px 15px 50px rgba(0,0,0,0.8);
+    max-width: 500px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .title_àpropos{
+    text-align: center;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid grey;
+    color: #111;
+    font-size: 10px;
+    resize: none;
+}
+
+button{
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.copyright, .copyright p{
+    color: #fff;
+    background-color: #111;
+    text-align: center;
+}
+
+header.hidden {
+    top: -80px;
+}
+
+
+@media (max-width: 812px) {
+    header, header.hidden{
+        padding: 10px 20px;
+    }
+
+    .nav li{
+        margin-left: 0px;
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.5em;
+        font-weight: 250;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    section{
+        padding: 15px;
+    }
+
+    .background .description .h2, .description p{
+        font-size: 2em;
+    }
+
+    .LaCarte{
+        margin-top: 0px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .temoignage h2{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .temoignage p{
+        text-align: center;
+    }
+
+    .row .column{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
